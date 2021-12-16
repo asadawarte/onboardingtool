@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.header {
+  padding: 0.5rem 0;
+  background-color:white;
+  position: relative;
+  z-index: 9999;
+  height: 50px;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.15)!important;
+}
