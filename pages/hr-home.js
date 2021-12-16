@@ -9,8 +9,10 @@ export default function hrHome() {
   return (
     <div>
      <Header></Header>
-      <div style={{padding:"10px",height:"1080px",background:'#fcfcfc'}}>
-           
+      <div >
+                <div className="grid">
+                        Employees To Be Onboarded
+                </div>
      </div>
     </div>
   )
