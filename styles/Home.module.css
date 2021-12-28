@@ -12,6 +12,17 @@
   align-items: center;
 }
 
+.content {
+  min-height: 100vh;
+  margin-left: 4rem;
+  padding: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -82,7 +93,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .card:hover,
