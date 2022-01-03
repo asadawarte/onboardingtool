@@ -1,9 +1,12 @@
 import styles from '../styles/Home.module.css'
 import React, { Component } from 'react';
+import Header from '../components/header';
 
 class FileUpload extends Component {
     render() {
       return (
+        <div>
+          <Header></Header>
         <div className="FileUpload">
           <h1 align='center'>Document Submission</h1>
           <h4 align='center'>Please submit scanned copy of the following documents for verification.</h4>
@@ -48,6 +51,7 @@ class FileUpload extends Component {
           <input type="button" value="Save" className={styles.card} />
           <input type="submit" value="Save & Submit" className={styles.card} />
           </div>
+        </div>
         </div>
       );
     }
