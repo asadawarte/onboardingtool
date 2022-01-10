@@ -6,10 +6,10 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 } */
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 /* * {
   box-sizing: border-box;
@@ -37,9 +37,11 @@ a {
     min-width: 850px;
     width: 650px;
     height: 750px;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 0;
     border: solid 1px;
+    background-color: white;
+
 }
 }
 
@@ -67,8 +69,139 @@ a {
     width: 850px;
     height: 70px;
     border-bottom: solid 1px;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    font-size: 22px;
+    color: burlywood;
+    font-weight: 700;
   }
   .step-box{
     border: solid 1px;
     height: 30px;
   }
+  .home-subcontainer-left{
+    width:500px;
+    height:500px;
+    float:left;
+    margin: 30px;
+  }
+  .home-subcontainer-right{
+    width:500px;
+    height:500px;
+    float:right;
+    margin: 30px;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .subcontainer-button {
+    height: 50px;
+    text-align: left;
+    background-color: white;
+
+   
+    /* width: inherit; */
+    width: 470px;
+    border: solid 1px;
+    padding: 10px;
+    margin: 4px;
+ }
+
+ .subcontainer-tiles{
+  width:200px;
+  height:200px;
+  background-color: white;
+ }
+ .home-img{
+  height: 60px;
+  width: 850px;
+  margin-left: 15%;
+ }
+
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.onboarding-tabs{
+padding: 5px;
+
+}
+.offerContainer{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    margin: 5%;
+}
+
+.download-button{
+  
+    height: 30px;
+    float: right;
+    color: coral;
+    background-color: revert;
+    border-width: thin;
+    border-radius: 15px;
+
+}
+
+.success-btn{
+  height: 30px;
+    float: right;
+    color: coral;
+    background-color: revert;
+    border-width: thin;
+    border-radius: 15px;
+    margin: 1%;
+    
+}
+.cancel-btn{
+  height: 30px;
+    float: right;
+    color: rgb(125, 129, 122);
+    background-color: revert;
+    border-width: thin;
+    border-radius: 15px;
+    margin: 1%;
+}
+
+.offer-tile{
+  box-shadow: 0 2px 56px 0 rgba(0,0,0,.15)!important;
+}
