@@ -13,15 +13,25 @@ class Header extends React.Component {
     render(){
         return (
             <div>
+                  
+
                <div className="header">
-
+               <img  src='./alt-logo.jpg'></img> 
+               <span>Onboarding</span>
                     <div style={{float:'right',paddingRight:"10px"}}>
-                        
-                       <CgProfile onClick={this.openDropdown} style={{fontSize:'30px'}}>
-                          
-
-                            
-                        </CgProfile>
+                    <div>
+                   
+                    <div className="dropdown">
+                    <button className="dropbtn">
+                    <img style={{width:'30px',height:"40px"}} src='./profile.png'></img> 
+                    </button>
+                    <div className="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    </div>
+                    </div>
                     </div>
               </div>
             </div>
