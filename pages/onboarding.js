@@ -9,30 +9,23 @@ export default function Oboarding() {
 
  
        
-    return (<div>
+    return (<div style={{background:'#f1f4f8'}}>
       <Header></Header>
-      <h1 style={{textAlign:'center',fontSize:'16px'}}> Onboarding </h1>
+      {/* <h1 style={{textAlign:'center',fontSize:'16px'}}> Onboarding </h1> */}
+      <div className='onboardingSteps'>
+
+        <div className='onboarding-tabs' style={{float:'left'}}>
+            Pre Joining 
+        </div>
+        <div className='onboarding-tabs' >
+          |
+        </div>
+        <div className='onboarding-tabs'  style={{float:'right'}}>
+            Onboarding Process
+        </div>
+        </div>
         <div className='container'>
-        <div className='onboardingSteps'>
-
-            <div style={{float:'left'}}>
-                Pre Joining >>
-            </div>
-            {/* <div  style={{textAlign:'center'}}>
-               Background Check  >>
-            </div> */}
-            <div  style={{float:'right'}}>
-                Onboarding Process
-            </div>
-        </div>
-        {/* <div className='step-box'>
-            Personal Information
-        </div>
-        <div className='step-box'>
-        <span>Uplaod Documents</span>
-        <button style={{float:"right"}} onClick={() => router.push('/fileupload')}> Click Here ..</button>
-        </div> */}
-
+       
         <Table striped bordered hover>
             <thead>
                 <tr>
@@ -51,10 +44,7 @@ export default function Oboarding() {
                 <tr>
                 <td>Uplaod Documents</td>
                 <td>Incomplete</td>
-                <td>
-                <button style={{float:"right"}} onClick={() => router.push('/fileupload')}> Click Here ..</button>
-
-                </td>
+                <td  onClick={() => router.push('/fileupload')}>Click Here To Update</td>
                 </tr>
               
             </tbody>

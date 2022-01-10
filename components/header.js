@@ -16,8 +16,8 @@ class Header extends React.Component {
                   
 
                <div className="header">
-               <img  src='./alt-logo.jpg'></img> 
-               <span>Onboarding</span>
+               <img  style={{float:'left',paddingRight:"10px",height:'31px'}} src='./alt-logo.jpg'></img> 
+              
                     <div style={{float:'right',paddingRight:"10px"}}>
                     <div>
                    
