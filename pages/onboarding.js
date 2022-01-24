@@ -44,7 +44,7 @@ export default function Oboarding() {
                 <tr>
                 <td>Uplaod Documents</td>
                 <td>Incomplete</td>
-                <td  onClick={() => router.push('/fileupload')}>Click Here To Update</td>
+                <td  onClick={() => router.push('/FileUpload')}>Click Here To Update</td>
                 </tr>
               
             </tbody>
