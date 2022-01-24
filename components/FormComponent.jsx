@@ -43,6 +43,7 @@ class FormComponent extends Component {
     ],
     stepCount: 0,
   };
+  
   render() {
     const { classes } = this.props;
 
@@ -115,12 +116,12 @@ class FormComponent extends Component {
           );
       }
     };
-
+  
     return (
       <Grid container className={classes.formContainer}>
         <Grid item xs={12} sm={12}>
-          <form onSubmit={this.handleSubmit} className={classes.form}>
-            <Paper component={Box} mb={1} >
+          <form onSubmit={handleSubmit} className={classes.form}>
+            <Paper component={Box} mb={1}>
               <Box pt={2}>
                 {renderText({
                   type: "h6",

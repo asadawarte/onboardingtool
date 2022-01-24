@@ -3,7 +3,7 @@ import React from "react";
 import FormComponent from "./../components/FormComponent";
 
 function CandidateApplicationForm() {
-  return <FormComponent />;
+  return < FormComponent />;
 }
 
 export default CandidateApplicationForm;

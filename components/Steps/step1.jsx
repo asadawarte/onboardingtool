@@ -120,7 +120,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "phone",
+            name: "workPermitValidTill",
             label: "Work Permit Valid till (In case of Foreign Nationals)",
             type: "date",
             onChange: handleChange,
@@ -131,7 +131,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "firstName",
+            name: "placeOfBirth",
             label: "Place of Birth",
             onChange: handleChange,
           })}
@@ -139,7 +139,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "middleName",
+            name: "nationality",
             label: "Nationality",
             type: "text",
           
@@ -148,7 +148,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "lastName",
+            name: "religion",
             label: "Religion",
             onChange: handleChange,
           })}
@@ -156,7 +156,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12}sm={3}>
           {renderSelect({
             state,
-            name: "gender",
+            name: "maritalStatus",
             label: "Marital Status",
             options: [
               { key: "Single", value: "single" },
@@ -246,7 +246,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={2}>
           {renderInputField({
             state,
-            name: "duration",
+            name: "durationFrom",
             label: "Duration from",
             type: "date"
           })}
@@ -254,7 +254,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={2}>
           {renderInputField({
             state,
-            name: "duration",
+            name: "durationTo",
             label: "to",
             type: "date"
           })}
@@ -273,7 +273,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "houseNo",
+            name: "permanentHouseNo",
             label: "Flat / House No. / Floor / Building",
             onChange: handleChange,
           })}
@@ -281,7 +281,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "street",
+            name: "permanentStreet",
             label: "Colony / Street / Locality",
             onChange: handleChange,
           })}
@@ -289,7 +289,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "city",
+            name: "permanentCity",
             label: "City / District / Town",
             onChange: handleChange,
           })}
@@ -297,7 +297,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "state",
+            name: "permanentState",
             label: "State",
             onChange: handleChange,
           })}
@@ -307,7 +307,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
       <Grid item xs={12} sm={2}>
           {renderInputField({
             state,
-            name: "country",
+            name: "permanentCountry",
             label: "Country",
             onChange: handleChange,
           })}
@@ -315,7 +315,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={2}>
           {renderInputField({
             state,
-            name: "pincode",
+            name: "permanentPincode",
             label: "PIN Code",
             onChange: handleChange,
           })}
@@ -323,7 +323,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={2}>
           {renderInputField({
             state,
-            name: "duration",
+            name: "permanentDuration",
             label: "Duration from",
             type: "date"
           })}
@@ -331,7 +331,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={2}>
           {renderInputField({
             state,
-            name: "duration",
+            name: "permanentDuration",
             label: "to",
             type: "date"
           })}
@@ -342,7 +342,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={4}>
           {renderInputField({
             state,
-            name: "middleName",
+            name: "nearPoliceStation",
             label: "Nearest Police Station",
             onChange: handleChange,
           })}
@@ -350,7 +350,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={6}>
           {renderInputField({
             state,
-            name: "intermediateaddress",
+            name: "intermediateAddress",
             label: "Intermediate Address: (If any)",
           })}
         </Grid>
@@ -368,7 +368,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "houseNo",
+            name: "emergencyHouseNo",
             label: "Contact Person Name",
             onChange: handleChange,
           })}
@@ -376,7 +376,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "street",
+            name: "emergencyHouseStreet",
             label: "Contact Person Relationship",
             onChange: handleChange,
           })}
@@ -384,7 +384,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "city",
+            name: "emergencyCity",
             label: "Contact Number",
             onChange: handleChange,
           })}
@@ -395,13 +395,11 @@ const Step1 = ({ state, handleChange, handleNext }) => {
       <Grid item xs={12}>
           {renderInputField({
             state,
-            name: "country",
+            name: "emergencyCountry",
             label: "Contact Person Address with PIN Code",
             onChange: handleChange,
           })}
         </Grid>
-        
-  
       </Grid>
       
       <Grid container spacing={1} style={{ marginBottom: "16px" }}>
@@ -409,7 +407,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={4}>
           {renderSelect({
             state,
-            name: "middleName",
+            name: "referredBy",
             label: "Have you been referred by Altimetrik employee?",
             options: [
               { key: "Yes", value: "yes" },
@@ -420,7 +418,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12}sm={8}>
           {renderInputField({
             state,
-            name: "gender",
+            name: "referredEmpId",
             label: "If Yes mention the Employee Name & ID",
             
           })}
@@ -431,7 +429,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={6}>
           {renderSelect({
             state,
-            name: "middleName",
+            name: "previouslyWorked",
             label: "Have you previously worked in Altimetrik / Any of Vattikuti Group of Companies?",
             options: [
               { key: "Yes", value: "yes" },
@@ -443,7 +441,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12}sm={4}>
           {renderInputField({
             state,
-            name: "gender",
+            name: "previouslyWorkedCompanyName",
             label: "If Yes, please mention Company Name",
             onChange: handleChange,
           })}
@@ -453,7 +451,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={6}>
           {renderInputField({
             state,
-            name: "middleName",
+            name: "previousAltiEmpId",
             label: "Employee ID",
             onChange: handleChange,
           })}
@@ -461,7 +459,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "middleName",
+            name: "durationPreviousAltiFrom",
             label: "Duration",
             type: "date",
             
@@ -470,7 +468,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={3}>
           {renderInputField({
             state,
-            name: "middleName",
+            name: "durationPreviousAltiTo",
             label: "to",
             type: "Date",
             
@@ -481,7 +479,7 @@ const Step1 = ({ state, handleChange, handleNext }) => {
         <Grid item xs={12} sm={6}>
           {renderSelect({
             state,
-            name: "middleName",
+            name: "physicallyChallenged",
             label: "Physically Challenged",
             options: [
               { key: "Yes", value: "yes" },
@@ -490,11 +488,39 @@ const Step1 = ({ state, handleChange, handleNext }) => {
             onChange: handleChange,
           })}
         </Grid>
-        <Grid item xs={12}sm={4}>
+        
+        <Grid item xs={12} sm={6}>
+          {renderSelect({
+            state,
+            name: "physicallyChallengedDoc",
+            label: "If Yes, have the supporting documents been provided?",
+            options: [
+              { key: "Yes", value: "yes" },
+              { key: "No", value: "no" },
+            ],
+            onChange: handleChange,
+          })}
+        </Grid>
+      </Grid>
+      <Grid container spacing={1} style={{ marginBottom: "16px" }}>
+        <Grid item xs={12} sm={6}>
+          {renderSelect({
+            state,
+            name: "relativedOrAltimetrikYN",
+            label: "Do you have any relatives / friends working at Altimetrik?",
+            options: [
+              { key: "Yes", value: "yes" },
+              { key: "No", value: "no" },
+            ],
+            onChange: handleChange,
+          })}
+        </Grid>
+        
+        <Grid item xs={12} sm={6}>
           {renderInputField({
             state,
-            name: "gender",
-            label: "If Yes, please mention Company Name",
+            name: "relativedOrAltimetrik",
+            label: "If Yes, please provide Name, Emp ID",
             onChange: handleChange,
           })}
         </Grid>
