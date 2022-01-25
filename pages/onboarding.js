@@ -39,12 +39,12 @@ export default function Oboarding() {
                
                 <td>Personal Information</td>
                 <td>Incomplete</td>
-                <td>Click Here To Update</td>
+                <td  onClick={() => router.push('/CandidateApplicationForm')}>Click Here To Update</td>
                 </tr>
                 <tr>
                 <td>Uplaod Documents</td>
                 <td>Incomplete</td>
-                <td  onClick={() => router.push('/fileupload')}>Click Here To Update</td>
+                <td  onClick={() => router.push('/FileUpload')}>Click Here To Update</td>
                 </tr>
               
             </tbody>
